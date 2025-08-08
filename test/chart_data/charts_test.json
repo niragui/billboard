@@ -1,0 +1,16 @@
+[
+    {
+        "abbreviation": "hot100",
+        "name": "Hot 100",
+        "url": "hot-100"
+    },
+    {
+        "abbreviation": "bb200",
+        "name": "Billboard 200",
+        "url": "billboard-200"
+    },
+    {
+        "abbreviation": "global200",
+        "name": "Global 200"
+    }
+]

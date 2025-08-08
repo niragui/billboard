@@ -1,0 +1,93 @@
+{
+    "title": {
+        "tag": "h3",
+        "attributes": {
+            "id": {
+                "action": "equals",
+                "value": "title-of-a-story"
+            },
+            "class": {
+                "action": "starts_with",
+                "value": "c-title  a-font-basic u-letter-spacing"
+            }
+        }
+    },
+    "position": {
+        "tag": "span",
+        "attributes": {
+            "class": {
+                "action": "starts_with",
+                "value": "c-label  a-font-basic"
+            }
+        }
+    },
+    "credits": {
+        "tag": "span",
+        "attributes": {
+            "class": [
+                {
+                    "action": "starts_with",
+                    "value": "c-label a-no-trucate"
+                },
+                {
+                    "action": "starts_with",
+                    "value": "c-label  a-font-secondary u-letter-spacing-0010"
+                }
+            ]
+        }
+    },
+    "image": {
+        "tag": "div",
+        "attributes": {
+            "class": {
+                "action": "starts_with",
+                "value": "c-lazy-image  lrv-u-width-"
+            }
+        }
+    },
+    "extra_values": {
+        "tag": "span",
+        "attributes": {
+            "class": {
+                "action": "starts_with",
+                "value": "c-label  u-font-family-secondary"
+            }
+        }
+    },
+    "meaningful_positions": {
+        "tag": "span",
+        "attributes": {
+            "class": {
+                "action": "starts_with",
+                "value": "c-label  a-font-secondary-fancy-xxl"
+            }
+        }
+    },
+    "meaningful_dates": {
+        "tag": "a",
+        "attributes": {
+            "class": {
+                "action": "starts_with",
+                "value": "c-label__link lrv-u-color-grey-lightest"
+            }
+        }
+    },
+    "node":{
+        "tag": "div",
+        "attributes":{
+            "class":{
+                "action": "equals",
+                "value": "o-chart-results-list-row-container"
+            }
+        }
+    },
+    "date":{
+        "tag": "div",
+        "attributes":{
+            "id":{
+                "action": "equals",
+                "value": "chart-date-picker"
+            }
+        }
+    }
+}

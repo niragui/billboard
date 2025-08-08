@@ -1,0 +1,553 @@
+[
+    {
+        "abbreviation": "GLX",
+        "name": "Billboard Global Excl. U.S."
+    },
+    {
+        "abbreviation": "GLO",
+        "name": "Billboard Global 200",
+        "url": "billboard-global-200"
+    },
+    {
+        "abbreviation": "TGL",
+        "name": "Top Triller Global"
+    },
+    {
+        "abbreviation": "HUM",
+        "name": "Google's Top Hummed Songs 2020"
+    },
+    {
+        "abbreviation": "TLA",
+        "name": "Bandsintown x Billboard Top Livestream Artists "
+    },
+    {
+        "abbreviation": "TUS",
+        "name": "Top Triller U.S."
+    },
+    {
+        "abbreviation": "HSI",
+        "name": "Billboard Hot 100",
+        "url": "hot-100"
+    },
+    {
+        "abbreviation": "TLP",
+        "name": "Billboard 200",
+        "url": "billboard-200"
+    },
+    {
+        "abbreviation": "ATS",
+        "name": "Billboard Artist 100",
+        "url": "artist-100"
+    },
+    {
+        "abbreviation": "ARG",
+        "name": "Billboard Argentina Hot 100",
+        "url": "billboard-argentina-hot-100"
+    },
+    {
+        "abbreviation": "CNS",
+        "name": "Hot Canadian Digital Song Sales"
+    },
+    {
+        "abbreviation": "IDS",
+        "name": "Euro Digital Song Sales"
+    },
+    {
+        "abbreviation": "OCC",
+        "name": "The Official U.K. Singles Chart"
+    },
+    {
+        "abbreviation": "CEA",
+        "name": "Canada Emerging Artists"
+    },
+    {
+        "abbreviation": "CTF",
+        "name": "Canada CHR/Top 40",
+        "url": "canada-chr-top-40"
+    },
+    {
+        "abbreviation": "TCL",
+        "name": "Current Album Sales"
+    },
+    {
+        "abbreviation": "GES",
+        "name": "Germany Songs"
+    },
+    {
+        "abbreviation": "SPA",
+        "name": "Spain Digital Song Sales"
+    },
+    {
+        "abbreviation": "UKS",
+        "name": "U.K. Digital Song Sales"
+    },
+    {
+        "abbreviation": "AUS",
+        "name": "Australia Digital Song Sales"
+    },
+    {
+        "abbreviation": "MST",
+        "name": "Ringtones"
+    },
+    {
+        "abbreviation": "SWZ",
+        "name": "Switzerland Digital Song Sales"
+    },
+    {
+        "abbreviation": "CAC",
+        "name": "Canada AC",
+        "url": "canada-ac"
+    },
+    {
+        "abbreviation": "MIN",
+        "name": "Mexico Ingles Airplay"
+    },
+    {
+        "abbreviation": "ITA",
+        "name": "Italy Digital Song Sales"
+    },
+    {
+        "abbreviation": "FRA",
+        "name": "France Digital Song Sales"
+    },
+    {
+        "abbreviation": "BBR",
+        "name": "Hot 100 Recurrents",
+        "url": "hot-singles-recurrents"
+    },
+    {
+        "abbreviation": "HSX",
+        "name": "Holiday 100",
+        "url": "hot-holiday-songs"
+    },
+    {
+        "abbreviation": "OCL",
+        "name": "The Official U.K. Albums Chart"
+    },
+    {
+        "abbreviation": "RSS",
+        "name": "R&B Streaming Songs"
+    },
+    {
+        "abbreviation": "MPE",
+        "name": "Mexico Pop Espanol Airplay"
+    },
+    {
+        "abbreviation": "CAF",
+        "name": "Canada All-Format Airplay",
+        "url": "canada-all-format-airplay"
+    },
+    {
+        "abbreviation": "TFR",
+        "name": "Mainstream Top 40 Recurrent Airplay"
+    },
+    {
+        "abbreviation": "RDT",
+        "name": "R&B Digital Song Sales"
+    },
+    {
+        "abbreviation": "MEX",
+        "name": "Mexico Airplay"
+    },
+    {
+        "abbreviation": "CHT",
+        "name": "Canada Hot AC",
+        "url": "canada-hot-ac"
+    },
+    {
+        "abbreviation": "LRA",
+        "name": "Latin Rhythm Airplay",
+        "url": "latin-rhythm-airplay"
+    },
+    {
+        "abbreviation": "IDT",
+        "name": "Euro Digital Tracks"
+    },
+    {
+        "abbreviation": "DNC",
+        "name": "Dance/Mix Show Airplay",
+        "url": "hot-dance-airplay"
+    },
+    {
+        "abbreviation": "LUS",
+        "name": "LyricFind U.S."
+    },
+    {
+        "abbreviation": "RPT",
+        "name": "Rap Digital Song Sales"
+    },
+    {
+        "abbreviation": "RAS",
+        "name": "Rap Streaming Songs"
+    },
+    {
+        "abbreviation": "LGL",
+        "name": "LyricFind Global"
+    },
+    {
+        "abbreviation": "CCW",
+        "name": "Canada Country"
+    },
+    {
+        "abbreviation": "MYS",
+        "name": "MySpace Songs"
+    },
+    {
+        "abbreviation": "ALP",
+        "name": "Australian Albums"
+    },
+    {
+        "abbreviation": "RSA",
+        "name": "Rap Airplay"
+    },
+    {
+        "abbreviation": "DGL",
+        "name": "Dance Songs/Global"
+    },
+    {
+        "abbreviation": "GRA",
+        "name": "Greece Albums"
+    },
+    {
+        "abbreviation": "SMS",
+        "name": "Songs Of The Summer 2020"
+    },
+    {
+        "abbreviation": "RMS",
+        "name": "Mainstream R&B/Hip-Hop Airplay",
+        "url": "mainstream-r-and-b-hip-hop"
+    },
+    {
+        "abbreviation": "HBU",
+        "name": "Bubbling Under Hot 100",
+        "url": "bubbling-under-hot-100-singles"
+    },
+    {
+        "abbreviation": "BTU",
+        "name": "Bandsintown + Billboard U.S. Top Artists Index"
+    },
+    {
+        "abbreviation": "BTG",
+        "name": "Bandsintown + Billboard Global Top Artists Index"
+    },
+    {
+        "abbreviation": "DSA",
+        "name": "Dance Singles Sales"
+    },
+    {
+        "abbreviation": "HTS",
+        "name": "Heatseekers Songs"
+    },
+    {
+        "abbreviation": "GLP",
+        "name": "Germany Albums"
+    },
+    {
+        "abbreviation": "ITL",
+        "name": "Italy Albums"
+    },
+    {
+        "abbreviation": "3AZ",
+        "name": "Hot Dance/Electronic Songs of the 2010s (2013-on)"
+    },
+    {
+        "abbreviation": "3AB",
+        "name": "Hot 100 Songs of the 2010s"
+    },
+    {
+        "abbreviation": "3AE",
+        "name": "Radio Songs of the 2010s"
+    },
+    {
+        "abbreviation": "3AF",
+        "name": "Digital Song Sales of the 2010s"
+    },
+    {
+        "abbreviation": "3AC",
+        "name": "Billboard 200 Albums of the 2010s"
+    },
+    {
+        "abbreviation": "3AD",
+        "name": "Streaming Songs of the 2010s"
+    },
+    {
+        "abbreviation": "3AQ",
+        "name": "Hot Latin Songs of the 2010s"
+    },
+    {
+        "abbreviation": "3BC",
+        "name": "Top Touring Artists of the 2010s"
+    },
+    {
+        "abbreviation": "3AG",
+        "name": "Social 50 of the 2010s"
+    },
+    {
+        "abbreviation": "TFM",
+        "name": "Pop Airplay",
+        "url": "pop-songs"
+    },
+    {
+        "abbreviation": "ASI",
+        "name": "Adult Contemporary",
+        "url": "adult-contemporary"
+    },
+    {
+        "abbreviation": "ATF",
+        "name": "Adult Pop Airplay",
+        "url": "adult-pop-songs"
+    },
+    {
+        "abbreviation": "CSI",
+        "name": "Hot Country Songs",
+        "url": "country-songs"
+    },
+    {
+        "abbreviation": "CSA",
+        "name": "Country Airplay",
+        "url": "country-airplay"
+    },
+    {
+        "abbreviation": "CDT",
+        "name": "Country Digital Song Sales",
+        "url": "country-digital-song-sales"
+    },
+    {
+        "abbreviation": "CST",
+        "name": "Country Streaming Songs",
+        "url": "country-streaming-songs"
+    },
+    {
+        "abbreviation": "CLP",
+        "name": "Top Country Albums",
+        "url": "country-albums"
+    },
+    {
+        "abbreviation": "BSI",
+        "name": "Hot R&B/Hip-Hop Songs",
+        "url": "r-b-hip-hop-songs"
+    },
+    {
+        "abbreviation": "BLP",
+        "name": "Top R&B/Hip-Hop Albums",
+        "url": "r-b-hip-hop-albums"
+    },
+    {
+        "abbreviation": "RBM",
+        "name": "R&B/Hip-Hop Airplay",
+        "url": "hot-r-and-b-hip-hop-airplay"
+    },
+    {
+        "abbreviation": "RBT",
+        "name": "R&B/Hip-Hop Digital Song Sales"
+    },
+    {
+        "abbreviation": "RBS",
+        "name": "R&B/Hip-Hop Streaming Songs"
+    },
+    {
+        "abbreviation": "BST",
+        "name": "Hot R&B Songs",
+        "url": "r-and-b-songs"
+    },
+    {
+        "abbreviation": "RBL",
+        "name": "Top R&B Albums",
+        "url": "r-and-b-albums"
+    },
+    {
+        "abbreviation": "RAP",
+        "name": "Hot Rap Songs",
+        "url": "rap-song"
+    },
+    {
+        "abbreviation": "TFC",
+        "name": "Rhythmic Airplay",
+        "url": "rhythmic-40"
+    },
+    {
+        "abbreviation": "DAN",
+        "name": "Hot Dance/Electronic Songs",
+        "url": "dance-electronic-songs"
+    },
+    {
+        "abbreviation": "DDT",
+        "name": "Dance/Electronic Digital Song Sales",
+        "url": "dance-electronic-digital-song-sales"
+    },
+    {
+        "abbreviation": "DAS",
+        "name": "Dance/Electronic Streaming Songs",
+        "url": "dance-electronic-streaming-songs"
+    },
+    {
+        "abbreviation": "DSI",
+        "name": "Dance Club Songs"
+    },
+    {
+        "abbreviation": "ELP",
+        "name": "Top Dance/Electronic Albums",
+        "url": "dance-electronic-albums"
+    },
+    {
+        "abbreviation": "HTL",
+        "name": "Hot Latin Songs",
+        "url": "latin-songs"
+    },
+    {
+        "abbreviation": "HTA",
+        "name": "Latin Airplay",
+        "url": "latin-airplay"
+    },
+    {
+        "abbreviation": "LDT",
+        "name": "Latin Digital Song Sales"
+    },
+    {
+        "abbreviation": "LSS",
+        "name": "Latin Streaming Songs"
+    },
+    {
+        "abbreviation": "LPO",
+        "name": "Latin Pop Airplay",
+        "url": "latin-pop-airplay"
+    },
+    {
+        "abbreviation": "LCM",
+        "name": "Top Latin Albums",
+        "url": "latin-albums"
+    },
+    {
+        "abbreviation": "LPP",
+        "name": "Latin Pop Albums",
+        "url": "latin-pop-albums"
+    },
+    {
+        "abbreviation": "HSB",
+        "name": "Radio Songs",
+        "url": "radio-songs"
+    },
+    {
+        "abbreviation": "HDS",
+        "name": "Digital Song Sales",
+        "url": "digital-song-sales"
+    },
+    {
+        "abbreviation": "STM",
+        "name": "Streaming Songs",
+        "url": "streaming-songs"
+    },
+    {
+        "abbreviation": "SOC",
+        "name": "Social 50",
+        "url": "social-50"
+    },
+    {
+        "abbreviation": "TSL",
+        "name": "Album Sales"
+    },
+    {
+        "abbreviation": "VNL",
+        "name": "Vinyl Albums",
+        "url": "vinyl-albums"
+    },
+    {
+        "abbreviation": "TLC",
+        "name": "Catalog Albums",
+        "url": "catalog-albums"
+    },
+    {
+        "abbreviation": "TAS",
+        "name": "Tastemakers"
+    },
+    {
+        "abbreviation": "JPN",
+        "name": "Japan Hot 100"
+    },
+    {
+        "abbreviation": "CAN",
+        "name": "Billboard Canadian Hot 100",
+        "url": "canadian-hot-100"
+    },
+    {
+        "abbreviation": "CNA",
+        "name": "Billboard Canadian Albums",
+        "url": "canadian-albums"
+    },
+    {
+        "abbreviation": "ASX",
+        "name": "Holiday Airplay"
+    },
+    {
+        "abbreviation": "XML",
+        "name": "Top Holiday Albums",
+        "url": "holiday-albums"
+    },
+    {
+        "abbreviation": "XDT",
+        "name": "Holiday Digital Song Sales"
+    },
+    {
+        "abbreviation": "XSS",
+        "name": "Holiday Streaming Songs"
+    },
+    {
+        "abbreviation": "ATM",
+        "name": "Greatest of All Time Artists"
+    },
+    {
+        "abbreviation": "ARIAS",
+        "name": "Australian ARIA Singles",
+        "url": "singles-chart"
+    },
+    {
+        "abbreviation": "ARIAA",
+        "name": "Australian ARIA Albums",
+        "url": "albums-chart"
+    },
+    {
+        "abbreviation": "ALT",
+        "name": "Top Alternative Albums",
+        "url": "alternative-albums"
+    },
+    {
+        "abbreviation": "ARK",
+        "name": "Hot Rock & Alternative Songs",
+        "url": "rock-songs"
+    },
+    {
+        "abbreviation": "AVS",
+        "name": "Hot Alternative Songs",
+        "url": "hot-alternative-songs"
+    },
+    {
+        "abbreviation": "ALS",
+        "name": "Alternative Streaming Songs",
+        "url": "alternative-streaming-songs"
+    },
+    {
+        "abbreviation": "RKT",
+        "name": "Rock Digital Song Sales",
+        "url": "rock-digital-song-sales"
+    },
+    {
+        "abbreviation": "HSG",
+        "name": "Hot Hard Rock Songs",
+        "url": "hot-hard-rock-songs"
+    },
+    {
+        "abbreviation": "MRT",
+        "name": "Alternative Airplay",
+        "url": "alternative-airplay"
+    },
+    {
+        "abbreviation": "AAA",
+        "name": "Adult Alternative Airplay",
+        "url": "triple-a"
+    },
+    {
+        "abbreviation": "RKA",
+        "name": "Rock & Alternative Airplay",
+        "url": "rock-airplay"
+    }
+]
