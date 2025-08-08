@@ -111,6 +111,22 @@ class BillboardChartWebsite():
 
         return debuts_nodes
 
+    def get_chart_date(self):
+        """
+        Returns the date as presented in the chart
+        """
+        soup = self.get_soup()
+
+        items = []
+
+        date_node = soup.find(DATE_FILTER)
+        if date_node is None:
+            raise KeyError(f"Chart Date Not Found")
+
+        chart_date = datetime.date.fromisoformat(date_node.attrs["data-date"])
+
+        return chart_date
+
     def get_items(self):
         """
         Returns a dict with the entries data of the chart
