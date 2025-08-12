@@ -4,10 +4,11 @@ import requests
 
 import datetime
 
-from .exceptions import ConnectionError
+from .exceptions import ConnectionError, DateError
 from .filters import POSITIONS_FILTER, TITLES_FILTER, CREDITS_FILTER
 from .filters import EXTRAS_FILTER, IMAGES_FILTER, CARDS_FILTER, DATE_FILTER
 from .filters import MEANINGUL_DATES_FILTER, MEANINGUL_POSITIONS_FILTER
+from .filters import NodeFilter
 
 from ..constants import CHARTS_FILE
 
@@ -23,6 +24,20 @@ AUTOMATIONS_FOLDER = os.path.dirname(os.path.dirname(os.path.dirname(THIS_FOLDER
 sys.path.append(AUTOMATIONS_FOLDER)
 
 from BeautifulSoup.src.parser import MySoup, Tag
+
+
+def read_date_from_node(node: Tag):
+    """
+    Subtract the date in isoformat from the date node
+
+    Parameters:
+        - node: Node with the date data
+    """
+    date_text = node.text.strip()
+
+    date_item = datetime.datetime.strptime(date_text, "%m/%d/%y").date()
+
+    return date_item
 
 
 class BillboardChartWebsite():
@@ -44,7 +59,7 @@ class BillboardChartWebsite():
 
         chart_response = requests.get(url)
         if chart_response.status_code // 100 != 2:
-            raise ConnectionError(f"Could Not Connect To The Base Website [{chart_response.reason}]")
+            raise ConnectionError(f"Could Not Connect To The Base Website [URL: {url} | Reason: {chart_response.reason}]")
 
         return chart_response.content.decode("utf-8")
 
@@ -53,6 +68,9 @@ class BillboardChartWebsite():
         Gets the soup item of the chart
         """
         html = self.get_html()
+
+        with open("chart.html", "w") as f:
+            f.write(html)
 
         return MySoup(html)
 
@@ -102,7 +120,11 @@ class BillboardChartWebsite():
         """
         debuts_pos_found = soup.find_all(MEANINGUL_POSITIONS_FILTER)
 
+        if len(debuts_pos_found) == 1:
+            return []
+
         debuts_nodes = []
+
 
         for i, element in enumerate(debuts_pos_found):
             if i % 2 == 1:
@@ -117,11 +139,9 @@ class BillboardChartWebsite():
         """
         soup = self.get_soup()
 
-        items = []
-
         date_node = soup.find(DATE_FILTER)
         if date_node is None:
-            raise KeyError(f"Chart Date Not Found")
+            raise DateError(f"Chart Date Not Found For {self.chart.get_url(self.date)}")
 
         chart_date = datetime.date.fromisoformat(date_node.attrs["data-date"])
 
@@ -146,20 +166,40 @@ class BillboardChartWebsite():
             titles_found = node.find(TITLES_FILTER)
             credits_found = node.find(CREDITS_FILTER)
             meaningful_dates = node.find_all(MEANINGUL_DATES_FILTER)
+  
             images_found = self.get_images(node)
             extras_found = self.get_extra_values(node)
             debuts_nodes = self.get_debut_positions(node)
 
-            # Extract and clean data
             position = int(positions_found.text)
             title = titles_found.text.strip()
             image_url = images_found[0].attrs["src"]
             last_week = extras_found[0].text.strip()
             peak = int(extras_found[1].text)
             weeks = int(extras_found[2].text)
-            debut_date = meaningful_dates[0].attrs["href"][-10:]
-            debut_position = int(debuts_nodes[0].text)
-            peak_date = meaningful_dates[1].attrs["href"][-10:]
+
+            if len(meaningful_dates) > 0:
+                debut_date = read_date_from_node(meaningful_dates[0])
+                if debut_date > chart_date:
+                    debut_year = debut_date.year % 1000
+                    debut_century = chart_date.year // 100
+                    new_year = debut_century * 100 + debut_year
+                    debut_date = debut_date.replace(year=new_year)
+
+                if len(debuts_nodes) == 0:
+                    debut_position = None
+                else:
+                    debut_position = int(debuts_nodes[0].text)
+            elif weeks == 1:
+                debut_date = chart_date
+                debut_position = position
+
+            if len(meaningful_dates) > 1:
+                peak_date = read_date_from_node(meaningful_dates[1])
+            elif weeks == 1:
+                peak_date = chart_date
+            else:
+                peak_date = None
 
             credits = None
             if credits_found:
@@ -175,15 +215,12 @@ class BillboardChartWebsite():
                 last_week=last_week,
                 peak=peak,
                 weeks=weeks,
-                debut_date=debut_date,
+                debut_date=debut_date.isoformat(),
                 debut_position=debut_position,
-                peak_date=peak_date,
+                peak_date=peak_date.isoformat(),
                 date=chart_date,
                 credits=credits
             )
-
-            while chart_item in items:
-                chart_item.update_version()
 
             items.append(chart_item)
 

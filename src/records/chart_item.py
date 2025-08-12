@@ -10,6 +10,8 @@ NEW_PEAK_TEXT = "NEW PEAK"
 RE_PEAK_TEXT = "RE-PEAK"
 PEAK_TEXT = "PEAK"
 
+NO_IMAGE = "lazyload-fallback"
+
 
 class ChartItem:
     def __init__(self,
@@ -23,10 +25,11 @@ class ChartItem:
                  debut_position: int,
                  peak_date: str,
                  date: datetime.date,
-                 credits: Optional[str] = None,
-                 version: Optional[int] = None):
+                 credits: Optional[str] = None):
         self.position = position
         self.title = title
+        if image.find(NO_IMAGE) >= 0:
+            image = None
         self.image = image
 
         if last_week.isdigit():
@@ -41,16 +44,6 @@ class ChartItem:
         self.peak_date = datetime.date.fromisoformat(peak_date)
         self.date = date
         self.credits = credits
-        self.version = version
-
-    def update_version(self):
-        """
-        Increase the version cause the item is dupped
-        """
-        if self.version is None:
-            self.version = 1
-        else:
-            self.version += 1
 
     @property
     def item_id(self):
@@ -58,10 +51,7 @@ class ChartItem:
         Returns a string that represents the chart uniquely, based on
         its debut position and debut date
         """
-        if self.version is None:
-            return f"{self.debut_date}-{self.debut_position}"
-        else:
-            return f"{self.debut_date}-{self.debut_position}-{self.version}"
+        return f"{self.debut_date}-{self.debut_position}"
 
     @property
     def is_new_peak(self):
